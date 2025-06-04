@@ -46,6 +46,8 @@ npm install
 npm start
 ```
 
+The client will be available at http://localhost:9000 or at your defined port
+
 ## Screenshots
 
 Sample screenshots of the application are available in the `/SCREENSHOTS` directory.

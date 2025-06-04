@@ -3,13 +3,14 @@ const express = require("express");
 const http = require("http");
 // const cookieParser = require("cookie-parser");
 // const cors = require("cors");
-const connectDB = require("./utils/connectDB.js");
+// const connectDB = require("./utils/connectDB.js");
 
 const stockRoutes = require("./routes/stock.routes.js");
 
 const app = express();
 const server = http.createServer(app);
 
+// no need of these packages for now
 // Enable CORS for required origins
 // app.use(cors());
 
@@ -23,7 +24,8 @@ app.get("/test", (req, res) => {
 
 app.use("/", stockRoutes);
 
-connectDB();
+// not used database so comment
+// connectDB();
 
 const port = process.env.PORT || 9000;
 server.listen(port, () => {
